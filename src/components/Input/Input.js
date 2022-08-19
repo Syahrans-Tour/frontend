@@ -11,6 +11,7 @@ export const InputData = (props) => {
         onChange={props.onChange}
         value={props.value}
         required={props.required}
+        onKeyDown={props.onKeyDown}
       />
     </>
   );
