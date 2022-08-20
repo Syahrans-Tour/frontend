@@ -14,9 +14,9 @@ const Home = (props) => {
     const { key } = e;
     const trimmedInput = input.trim();
     
-    if (key === "," && trimmedInput.length) {
+    if (key == "," && trimmedInput.length) {
       e.preventDefault();
-      if (!tags.includes(trimmedInput) && tags.length <= 10)
+      if (!tags.includes(trimmedInput) && tags.length < 10)
         setTags((prevState) => [...prevState, trimmedInput]);
       setInput("");
     }
@@ -34,7 +34,7 @@ const Home = (props) => {
         <S.HomeTitle>Syahrans Tour</S.HomeTitle>
         <InputData
           label="Search holiday expectation!"
-          type="search"
+          type="text"
           placeholder="type anything and separate by commas"
           required={true}
           onChange={onChange}
