@@ -7,7 +7,7 @@ export const ButtonBg = styled.button`
   border-radius: 20px;
   text-align: center;
   font-size: 1.2rem;
-  width: 20%;
+  width: 14vw;
   margin-top: ${(props) => props.mt};
   padding: 10px;
   height: fit-content;

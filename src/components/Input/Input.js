@@ -12,6 +12,7 @@ export const InputData = (props) => {
         value={props.value}
         required={props.required}
         onKeyDown={props.onKeyDown}
+        tabIndex="0"
       />
     </>
   );

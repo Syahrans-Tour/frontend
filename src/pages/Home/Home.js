@@ -43,7 +43,7 @@ const Home = (props) => {
         />
         <S.Bottoms>
           <Buttons title="Cari" />
-          <p>Tags:</p>
+          <S.HomeToggle>Tags:</S.HomeToggle>
           <S.Tags>
             {tags.map((data, idx) => (
               <S.TagComponent key={idx}>{data}</S.TagComponent>
